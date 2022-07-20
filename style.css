@@ -158,7 +158,13 @@ input{
     border-radius: 4px;
     height: 2.5rem;
     padding: 0.25rem;
+    
 
+}
+
+input:focus{
+    border-color:  rgb(51, 51, 240);
+    box-shadow: 3px 1px 7px rgba(0, 0, 0, 0.308);
 }
 
 .form-footer{
