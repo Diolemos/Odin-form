@@ -1,0 +1,16 @@
+/* 
+Design decitions:  button color: #596D48
+
+input border color: #E5E7EB
+
+
+The other variation is the selected input, which should have a blue border and subtle box-shadow.
+ This can be done with the :focus pseudo-class you’ve learned about in an earlier lesson.
+
+*/
+
+
+
+.btn{
+    background-color: #596D48;
+}
