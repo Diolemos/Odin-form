@@ -20,6 +20,8 @@
 
     .image-container{
         height: 50rem;
+        position: relative;
+        
     }
 
     .logo-shield{
@@ -43,6 +45,11 @@
         /* grid-template-rows: 250px 700px 200px; */
         
     }
-
+    
+    .logo-shield{
+        position: absolute;
+        top: 15%;
+        width: 100%;
+    }
     
 }
