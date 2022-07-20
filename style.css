@@ -9,7 +9,69 @@ The other variation is the selected input, which should have a blue border and s
 
 */
 
+@font-face {
+    font-family: 'Norse bold';
+    src: url(/Norse-Bold.otf);
+}
 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    
+    overflow-x: hidden;
+
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+
+.main-container{
+   
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+
+    height: 100%;
+    width: 100%;
+}
+
+.image-container{
+    background-image: url("imgs/bg-img.jpg");
+    background-size: cover;
+}
+
+.logo-shield{
+    height: 22rem;
+    background-color: rgba(0, 0, 0, 0.39);
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.odin-logo{
+    height: 100%;
+}
+.logo-shield p{
+    font-family: 'Norse bold';
+    color: #fff;
+    font-size: 16rem;
+}
 
 .btn{
     background-color: #596D48;
