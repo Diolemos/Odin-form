@@ -44,7 +44,7 @@ body{
    
     display: grid;
     
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 35fr 65fr;
 
     height: 100%;
     width: 100%;
@@ -54,6 +54,7 @@ body{
     background-image: url("imgs/bg-img.jpg");
     background-size: cover;
     position: relative;
+    
 }
 
 .logo-shield{
@@ -87,6 +88,24 @@ body{
     text-decoration: underline;
     font-style: italic;
 }
+
+/* Right side of the website...  */
+
+.form-container{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    
+}
+
+.form-header{
+ background-color: rgb(238, 238, 238);
+}
+
+.form-footer{
+    background-color: rgb(238, 238, 238);
+}
+
+
 .btn{
     background-color: #596D48;
 }

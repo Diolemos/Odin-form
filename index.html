@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- main grid container -->
     <div class="main-container">
+
+        <!-- Image container / left side of main grid container -->
         <figure class="image-container">
             <div class="logo-shield"><img class="odin-logo" src="imgs/odin-lined.png" alt="">
             <p>Odin</p></div>
@@ -23,15 +26,19 @@
                 <p>Sign up now to get started.</p>
                 <p>you know you want to.</p>
             </div>
-            <form action="#">
-                <label for="first-name">first name</label>
-                <label for="last-name">last name</label>
-                <label for="email">e-mail</label>
-                <label for="phone-number">phone number</label>
-                <label for="password">password</label>
-                <label for="conform-password">confirm password</label>
-
-            </form>
+            <div class="form">
+                <p class="form-heading">Let's do this!</p>
+                <form action="#">
+                    <label for="first-name">first name <input type="text" name="first-name" id="first-name"> </label>
+                    <label for="last-name">last name <input type="text" name="last-name" id="last-name"> </label>
+                    <label for="email">e-mail <input type="email" name="email" id="e-mail"> </label>
+                    <label for="phone-number">phone number</label>
+                    <label for="password">password <input type="password" name="password" id="password"> </label>
+                    <label for="conform-password">confirm password <input type="password" name="" id=""> </label>
+    
+                </form>
+            </div>
+            
             <div class="form-footer">
                 <button class="btn">Sign up</button>
                 <p>Already have an account? <span>log in</span></p>
