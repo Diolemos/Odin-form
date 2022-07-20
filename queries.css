@@ -1,0 +1,48 @@
+@media(max-width:1420px){
+    .odin-logo{
+        height: 80%;
+    }
+    .logo-shield p{
+        
+        font-size: 12rem;
+    }
+    
+}
+
+@media(max-width:950px){
+    body{
+        text-align: center;
+    }
+    
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+
+    .image-container{
+        height: 50rem;
+    }
+
+    .logo-shield{
+        margin-top: 10%;
+    }
+
+
+    form{
+        margin: 1rem auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        padding-bottom: 5rem;
+        
+    }
+
+    .form-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 700px 200px;
+        
+    }
+
+    
+}
