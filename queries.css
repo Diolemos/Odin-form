@@ -28,6 +28,18 @@
         margin-top: 10%;
     }
 
+    .form-header {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-right:10px;
+        padding-left: 10px;
+       
+    }
+    .form-header p{
+        font-size: 3.3rem;
+    }
 
     form{
         margin: 1rem auto;
