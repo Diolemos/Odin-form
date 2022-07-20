@@ -53,6 +53,7 @@ body{
 .image-container{
     background-image: url("imgs/bg-img.jpg");
     background-size: cover;
+    position: relative;
 }
 
 .logo-shield{
@@ -73,6 +74,19 @@ body{
     font-size: 16rem;
 }
 
+.image-container .image-info {
+    color: #fff;
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 2rem;
+    text-align: center;
+    font-size: 1.6rem;
+}
+.image-container .image-info span{
+    text-decoration: underline;
+    font-style: italic;
+}
 .btn{
     background-color: #596D48;
 }
