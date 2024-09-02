@@ -1,4 +1,10 @@
-@media(max-width:1420px){
+@media(min-width:951px){
+    html{
+      height: 100vh ;
+      box-sizing: border-box;
+       
+    }
+   
     .odin-logo{
         height: 80%;
     }

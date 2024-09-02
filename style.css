@@ -1,5 +1,5 @@
 /* 
-Design decitions:  button color: #596D48
+Design decisions:  button color: #596D48
 
 input border color: #E5E7EB
 
@@ -20,51 +20,64 @@ The other variation is the selected input, which should have a blue border and s
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
-    font-size: 62.5%;
-    overflow-x: hidden;
+    position: relative;
+    max-height: 100vh;
+    font-size: 70%;
+   overflow-x: hidden;
+   overflow-y: scroll;
+   height: 100vh;
     scroll-behavior: smooth;
 }
 
 body{
+    position: relative;
+    
     font-family: sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
     
-    overflow-x: hidden;
-
-    width: 100vw;
+   
+    margin: 0; 
+    padding: 0;
+    
     height: 100vh;
     
 }
 
 
 .main-container{
-   
+   position: relative;
     display: grid;
     
     grid-template-columns: 35fr 65fr;
 
+    max-height: 100vh;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .image-container{
     background-image: url("imgs/bg-img.jpg");
     background-size: cover;
-    position: relative;
+    position: relative; /*  descendent is absolute */
     
 }
 
 .logo-shield{
-    height: 22rem;
-    background-color: rgba(0, 0, 0, 0.39);
+    height: 12rem;
+    background-color: rgba(50, 50, 50, 0.568);
     margin-top: 20%;
     width: 100%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+
 }
 
 .odin-logo{
@@ -73,17 +86,19 @@ body{
 .logo-shield p{
     font-family: 'Norse bold';
     color: #fff;
-    font-size: 16rem;
+    font-size: 12rem;
 }
 
 .image-container .image-info {
-    color: #fff;
+    color: #e2e0e0;
     position: absolute;
     display: block;
     width: 100%;
-    bottom: 2rem;
+    bottom: 5px;
+   
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-style: italic;
 }
 .image-container .image-info span{
     text-decoration: underline;
@@ -92,72 +107,93 @@ body{
 
 /* Right side of the website...  */
 
-.form-container{
+.right-panel{
+    max-height: 100%;
+    
     display: grid;
     grid-template-rows: repeat(3,1fr);
+   
     
+}
+.right-panel > div{
+   padding-left: 3rem;
 }
 
 .bold-heading{
-   
+    
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    font-size: 2.3rem;
+    font-size: 2rem;
+    text-align: left;
 }
 
 .form-header{
     background-color: rgb(238, 238, 238);
 
-padding: 1rem 10rem 5rem 5rem;
+padding: 6rem 11rem 6rem 0rem;
 }
 .form-header p:first-child{
-    margin-top: 8rem;
+    margin-top: 2rem;
     
 }
 
 .form-header p:nth-child(2){
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
-.form{
-    padding-top: 3rem;
-    padding-left: 5rem;
-    padding-bottom:3rem ;
+  
 
-    
-    
-}
 .form p{
     margin-bottom: 3rem;
 }
 
-form{
-    display: grid;
+.form-container{
+    /* display: grid;
     column-gap: 0;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr); */
+    
+
+    display: flex;
+    flex-direction: column;
+  
     height: 100%;
     width: 100%;
-    padding-right: 5%;
-    max-width: 500px;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    max-width: 800px;
     column-gap: 3rem;
 }
+.form-heading:first-child{
+    padding-bottom: 2rem;
+}
+
+form{
+   display: grid;
+   grid-template-columns:repeat(2, 1fr) ;
+   grid-template-rows: repeat(3 auto) ;
+   gap: 2rem;
+}
+
 label{
     display: block;
     text-transform: uppercase;
-    color: black;
+    color: rgb(50, 50, 50);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    letter-spacing: 0.15rem;
-    font-size: 1.2rem;
+    letter-spacing: 0;
+    word-spacing: 3px;
+    font-size: 1.6rem;
 }
 input{
     
     border:1px solid #E5E7EB;
     outline: none;
     border-radius: 4px;
-    height: 2.5rem;
+    height: 2.4rem;
+    width: 100%;
     padding: 0.25rem;
     
 
@@ -172,18 +208,22 @@ input:focus{
     background-color: rgb(238, 238, 238);
     padding-left: 5rem;
     padding-top: 3rem;
+    box-shadow: -1px 10px 9px 0px rgba(129, 128, 128, 0.39) inset;
+-webkit-box-shadow: -1px 10px 9px 0px rgba(129, 128, 128, 0.39) inset;
+-moz-box-shadow: -1px 10px 9px 0px rgba(129, 128, 128, 0.39) inset;
 }
 
 
 .btn{
     background-color: #596D48;
+    max-width: 400px;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
-    font-size: 2rem;
-    padding: 1.8rem 5rem;
+    font-size: 1.2rem;
+    padding: 1rem 2.2rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
     box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.308);
     transition: all 200ms;
@@ -191,6 +231,9 @@ input:focus{
 
 .btn:active{
     box-shadow: none;
+}
+.btn:hover{
+    scale:1.1;
 }
 
 .form-footer p {
