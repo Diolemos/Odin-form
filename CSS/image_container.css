@@ -1,0 +1,43 @@
+.image-container{
+    background-image: url("../imgs/bg-img.jpg");
+    background-size: cover;
+    position: relative; /*  descendent is absolute */
+    
+}
+
+.logo-shield{
+    height: 12rem;
+    background-color: var(--transparent-light-gray);
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.odin-logo{
+    height: 100%;
+}
+.logo-shield p{
+    font-family: 'Norse bold';
+    color: var(--white);
+    font-size: 12rem;
+}
+
+.image-container .image-info {
+    color: var(--white);
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 5px;
+   
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.image-container .image-info span{
+    text-decoration: underline;
+    font-style: italic;
+}
